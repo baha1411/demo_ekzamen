@@ -8,6 +8,6 @@ namespace demo_ekzamin
 {
     class Core
     {
-        public static masterEntities DB = new masterEntities();
+        public static borifshoevEntities DB = new borifshoevEntities();
     }
 }

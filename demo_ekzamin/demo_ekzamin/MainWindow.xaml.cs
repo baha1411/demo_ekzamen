@@ -22,8 +22,8 @@ namespace demo_ekzamin
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private List<spt_fallback_db> _ServiceList;
-        public List<spt_fallback_db> ServiceList
+        private List<Material> _ServiceList;
+        public List<Material> ServiceList
         {
             get { return _ServiceList; }
             set { _ServiceList = value; }
@@ -33,7 +33,7 @@ namespace demo_ekzamin
         {
             InitializeComponent();
             DataContext = this;
-            ServiceList = Core.DB.spt_fallback_db.ToList();
+            ServiceList = Core.DB.Material.ToList();
         }
     }
     

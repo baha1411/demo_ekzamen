@@ -13,8 +13,6 @@
         </Grid.ColumnDefinitions>
 
         <Image 
-        Margin="5"
-        Source="./logo/1.jpg" 
         VerticalAlignment="Top"/>
 
         <StackPanel  Orientation="Vertical" VerticalAlignment="Bottom">
@@ -51,30 +49,26 @@
                     Tag="1"
                     Content="по возрастанию" 
                     IsChecked="True" 
-                    Checked="RadioButton_Checked"
+                   
                     VerticalContentAlignment="Center"/>
                 <RadioButton 
                     GroupName="Price" 
                     Tag="2"
                     Content="по убыванию" 
-                    Checked="RadioButton_Checked"
+                   
                     VerticalContentAlignment="Center"/>
 
                 <Label Content="Фильтр по скидке: "
         Margin="10,0,0,0"
         VerticalAlignment="Center"/>
-                <ComboBox
-    Name="DiscountFilterComboBox"
-    SelectedIndex="0"
-    SelectionChanged="DiscountFilterComboBox_SelectionChanged"
-    ItemsSource="{Binding FilterByDiscountNamesList}"/>
+                
 
                 <Label Content="Поиск"/>
                 <TextBox
                     Width="70"
                     x:Name="SearchFilterTextBox"
                     VerticalAlignment="Center"
-                    KeyUp="TextBox_KeyUp"/>
+                    />
             </StackPanel>
 
             <ListView
